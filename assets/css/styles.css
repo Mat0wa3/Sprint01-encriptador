@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+    --white: #fff;
+    --gray-100: #CED4DA;
+    --gray-200: #D8DFE8;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --light-blue-100: #F3F5FC;
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--light-blue-100);
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex: wrap;
+    gap: 2rem;
+    height: 92vh;
+    width: 100vw;
+    padding: 3rem;
+}
+
+.logo__container {
+    flex: 2;
+}
+
+section {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__container {
+    height: 90%;
+    display: flex;
+    align-items: end;
+}
+
+textarea {
+    height: 80%;
+    color: var(--dark-blue-300);
+    background: none;
+    resize: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 3rem;
+}
+
+textarea::placeholder {
+    color: var(--dark-blue-300)
+}
+
+/* For Internet Explorer */
+textarea:-ms-input-placeholder {
+    color: var(--dark-blue-300)
+}
+
+/* For Firefox */
+textarea::-moz-placeholder {
+    color: var(--dark-blue-300)
+}
+
+/* For other browsers */
+textarea::-webkit-input-placeholder {
+    color: var(--dark-blue-300)
+}
+
+.actions__container p {
+    color: var(--gray-400);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.actions__container p span {
+    margin-right: 0.5rem;
+}
+
+.actions__container p span img {
+    width: 1.3rem;
+}
+
+.buttons__container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.buttons__container button {
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.buttons__container button:hover {
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: #0A3871;
+    color: var(--white);
+    border: 1px solid var(--dark-blue-300);
+}
+
+.btn-1:hover {
+    background-color: var(--dark-blue-200);
+}
+
+.btn-2 {
+    background-color: var(--gray-200);
+    color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+}
+
+.btn-2:hover {
+    background-color: var(--gray-100);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex: 2.5;
+    width: 100%;
+    padding: 5px;
+    border-radius: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e0e0;
+    box-shadow: -20px 20px 60px #bebebe,
+        20px -20px 60px #ffffff;
+    color: var(--gray-400);
+    font-size: 2rem;
+}
+
+.aside__container {
+    margin-top: 5rem;
+}
+
+aside img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.aside__text {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.aside__text p:first-child {
+    color: var(--gray-500);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.aside__text p:last-child {
+    color: var(--gray-400);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.encripted {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset -20px 20px 60px #bebebe,
+        inset 20px -20px 60px #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: .5rem;
+    border: 2px solid #0275d8;
+    color: #0275d8;
+    padding: 5px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.copy:hover {
+    color: #fff;
+    background-color: #0275d8;
+}
+
+.copia {
+    display: flex;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+footer>.link>a {
+    display: flex;
+    padding: 5px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+/*
+***********************************
+***********************************
+*****     por Mateo López     *****
+*   https://github.com/Mat0wa3    *
+***********************************
+***********************************
+*/
